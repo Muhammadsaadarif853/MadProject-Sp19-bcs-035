@@ -16,7 +16,11 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      <Stack.Screen name="Dashboard" component={MainTabScreen} options={{
+     
+      
+      
+        <Stack.Screen name="Login" component={Loginpage} />
+        <Stack.Screen name="Dashboard" component={MainTabScreen} options={{
           
           headerStyle: {
             backgroundColor: '#262927',
@@ -26,8 +30,8 @@ function App() {
             fontWeight: 'bold',
             fontSize:24
           },
+         headerShown: false 
         }}/>
-      <Stack.Screen name="Login" component={Loginpage} />
       <Stack.Screen name="Signup" component={Signuppage} />
       <Stack.Screen name="Home" component={HomeScreen} />
      
